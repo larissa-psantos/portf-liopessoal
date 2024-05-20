@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu blog pessoal!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        header, section, footer {
+            margin-bottom: 20px;
+        }
+        .header-images {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .header-images img {
+            max-width: 100px;
+            height: auto;
+        }
+        header h1 {
+            color: #4CAF50;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+        }
+        nav a {
+            margin-right: 15px;
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        img {
+            max-width: 200px;
+            height: auto;
+            border-radius: 50%;
+            display: block;
+            margin: 10px auto;
+        }
+        h3 {
+            color: #4CAF50;
+        }
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+        }
+        form input, form textarea {
+            margin-bottom: 10px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        form button {
+            padding: 10px;
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #004d99;
+        }
+        footer p {
+            margin: 10px 0;
+        }
+        footer a button {
+            padding: 10px;
+            background-color: #0073b1;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-align: center;
+        }
+        footer a button:hover {
+            background-color: #005582;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-images">
+        <img src="tag.png" alt="Tag">
+        <img src="dev.png" alt="Developer">
+        <img src="tech.png" alt="Tech">
+    </div>
+    <header>
+        <h1>Meu blog pessoal!</h1>
+        <h3>Desabafos de uma iniciante em tecnologia</h3>
+        <p>Esse blog foi desenvolvido para fins acadêmicos. Aqui vou falar um pouco sobre o que tenho feito, área de interesse, dificuldades, curiosidades sobre mim e dicas para estudo.</p>
+        <nav>
+            <a href="#sobre-mim">Sobre Mim</a>
+            <a href="#dicas-de-estudo">Dicas de Estudo</a>
+            <a href="#conhecimentos-tecnicos">Conhecimentos Técnicos</a>
+        </nav>
+    </header>
+    
+    <section id="sobre-mim">
+        <img src="eu.png" alt="Larissa">
+        <h3>Sobre Mim</h3>
+        <p>Meu nome é Larissa, tenho 27 anos, e há dois anos decidi migrar de área. Sou formada em Farmácia, trabalhei por muito tempo na área, mas nunca me senti feliz. Hoje faço Análise e Desenvolvimento de Sistemas, estou quase no fim do curso, mas ainda cheia de dúvidas e anseios. Fiz estágio por um tempo na Hering Cia, na área de BI, e atualmente trabalho em uma Assessoria de Performance em Marketing com foco em E-commerce de Moda, fico na área de dados, captação de dados e desenvolvimento de dashboards. Sou apaixonada por animais, cachorros e gatos têm meu coração. Gosto de praticar esportes, e sou uma São-Paulina apaixonada por sofrer. Seja-bem vindo! <3</p>
+    </section>
+    
+    <section id="dicas-de-estudo">
+        <h3>Dicas de Estudo</h3>
+        <p>Cara, simplesmente estude todos os dias! No começo eu estudei loucamente todos os dias, com exceção do sábado, sou adventista e por isso esse é um dia diferente na minha semana. Mas tirando essa parte, fiz isso no início e deu muito certo, me apaixonei de cara por Python. O meu erro foi que, logo que iniciei no estágio, relaxei e passei a focar apenas naquilo que tinha que desempenhar no estágio. Resultado disso foi: me atrasei muito na faculdade, perdi pontos importantes para meu desenvolvimento e agora estou correndo atrás. Voltei a estudar todos os dias um pouquinho, e isso faz toda diferença. Não deixe de estudar, nem que seja 30 minutos por dia, mas estude! Entre em comunidades, o mundo tech é gigante e a comunidade se ajuda muito, com certeza você vai encontrar uma que se sinta acolhido! Não tente apressar o processo, ele é lento mas é recompensador (ainda não cheguei lá, mas sei que um dia vou chegar).</p>
+    </section>
+    
+    <section id="conhecimentos-tecnicos">
+        <h3>Conhecimentos Técnicos</h3>
+        <ul>
+            <li>Lógica de Programação</li>
+            <li>Python</li>
+            <li>SQL (PostgreSql)</li>
+            <li>Conhecimento básico em AWS RDS</li>
+            <li>Desenvolvimento de Dashboards (Looker Studio)</li>
+            <li>Ferramentas de Web Analytics voltadas para o Marketing (GA4, GTM, Google Ads e Facebook Ads)</li>
+        </ul>
+    </section>
+    
+    <footer>
+        <h3>Contato</h3>
+        <form>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensagem">Deixe sua mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+        <p>Se conecte comigo no LinkedIn!</p>
+        <a href="https://www.linkedin.com/in/larissapereirasantos/" target="_blank">
+            <button>Meu LinkedIn</button>
+        </a>
+    </footer>
+</body>
+</html>
+
+
